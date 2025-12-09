@@ -68,8 +68,7 @@ section{
     padding: 10px 15px;
     border-radius: 10px;
     border: #fff 3px dashed;
-    text-align: right;
-    margin-left: 70%;
+    text-align: left;
     transition: 0.25s;
 }
 .sd:hover{
