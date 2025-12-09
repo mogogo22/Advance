@@ -5,8 +5,11 @@
     scroll-behavior: smooth;
 }
 body{
-    background-color: #28443F;
+    background: linear-gradient(to top,  #28443F, #61a79a, #f2fd7d);
     height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 header{
     background-color: #f2fd7d;
@@ -58,24 +61,43 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url(img/Gemini_Generated_Image_w8bmmnw8bmmnw8bm.png);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 .sd{
-    background-color: #375f58;
-    padding: 10px 15px;
-    border-radius: 10px;
-    border: #fff 3px dashed;
     text-align: right;
     margin-left: 70%;
     transition: 0.25s;
 }
-.sd:hover{
-    transition: 0.25s;
-    background-color: #3d6962;
+.sd{
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: introText 2s ease-out forwards;
 }
+
+@keyframes introText {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.cha{
+    opacity: 0;
+    transform: scale(0.8);
+    transition: 1s ease;
+}
+
+.cha.show{
+    opacity: 1;
+    transform: scale(1);
+}
+
 .s h2{
     color: rgb(255, 255, 255);
     font-size: 30px;
