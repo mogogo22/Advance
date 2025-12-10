@@ -131,9 +131,12 @@ section{
 
 .s h2{
     color: rgb(255, 255, 255);
-    font-size: 30px;
-    font-weight: 900;
+    font-size: 35px;
+    font-weight: bolder;
     cursor: context-menu;
+    background: linear-gradient(to top,  #ffffff, #36bbd3, #000000);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .s h2 span{
     color: #f2fd7d;
@@ -148,6 +151,7 @@ section{
 h5{
     color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: context-menu;
 }
   .s h2 span {
     font-size: 30px;   /* قسم البرمجة */
@@ -189,54 +193,42 @@ h5{
 }
 
 .ti{
-    display: flex;
-    justify-content: center;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 900;
-    font-size: 35px;
-    text-align: center;
-    margin-bottom: 100px;
-    margin-top: 50px;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #abd3cc;
 }
 .ch{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
 }
 
 .cha{
-    background-color: #3d6e65;
-    width: 30%;
-    height: 400px;
-    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
-    border-radius: 5px;
-    padding: 20px;
-    margin: 15px;
-    transition: 0.25s;
-    color: #fff;
+  background-color: #000000;
+  color: #fff;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s;
 }
 .cha:hover{
-    transform: scale(1.1);
+  transform: scale(1.05);
 }
-.icon{
-    text-align: center;
+.icon img{
+  width: 120px;
+  margin-bottom: 10px;
 }
 .info h3{
-    color: #668fff;
-    font-size: 20px;
-    font-weight: 700;
-    margin: 10px;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  margin: 10px 0;
 }
 .info p{
-    font-size: 13px;
-    font-weight: 500;
-    text-align: right;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgb(157, 206, 236);
 }
 .mone{
     border-radius: 100px;
