@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="Advance" content="أكادمية أدفانس تكنولوجي">
+    <meta name="Advance" content="أكاديمية أدفانس تكنولوجي">
     <meta 
     property="og.title"
     content="Advance"/>
     <meta 
     property="og.discription"
-    content="أكادمية أدفانس | قسم البرمجة"/>
+    content="أكاديمية أدفانس | قسم البرمجة"/>
     <meta property="og.image" content="img/advance.png"/>
     <meta property="og.type" content="website"/>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advance | برمجة</title>
     <link rel="icon" href="img/advance.png" type="image/png">
     <link rel="stylesheet" href="style.css">
@@ -21,32 +21,55 @@
     <header>
         <img class="mone" src="img/advance.png"  alt="تحقق من إتصالك بالأنترنت">
         <a class="logo" href="">Advance</a>
-        <nav class="ab">
-            <a href="video.html">أعضاء القسم</a>
-            <a href="english.html">English</a>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav class="ab" id="mobileMenu">
+          <a href="video.html">أعضاء القسم</a>
+          <a href="english.html">ENGLISH</a>
         </nav>
-    </header>
+      </header>
+      
 
-    <section class="s" id="index">
-        <div class="sd">
-            <h2>أكادمية أدفانس تكنولوجي<br><span>قسم البرمجة</span></h2>
-            <h3>للتلمذة الثانوية</h3>
+
+      <section class="s" id="index">
+        <div class="sd blur-container">
+    
+            <h2>
+                <span class="blur-word">أكاديمية</span>
+                <span class="blur-word">أدفانس</span>
+                <span class="blur-word">تكنولوجي</span><br>
+    
+                <span class="blur-word main-word">قسم</span>
+                <span class="blur-word main-word">البرمجة</span>
+            </h2>
+    
+            <h3>
+                <span class="blur-word">للتلمذة</span>
+                <span class="blur-word">الثانوية</span>
+            </h3>
+    
             <div class="aaa">
-                <a href="https://www.facebook.com/AdvanceAcademyar/" target="_blank"><img src="img/face.png" alt=""></a>
-                <h5>+20 155 123 2952</h5>
+                <!-- ❌ مستثنى من البلور -->
+                <a class="no-blur" href="https://www.facebook.com/AdvanceAcademyar/" target="_blank">
+                    <img src="img/face.png" alt="">
+                </a>
+    
+                <!-- ❌ مستثنى من البلور -->
+                <h5 class="no-blur">+20 155 123 2952</h5>
             </div>
+    
         </div>
     </section>
+    
 
     <section class="se">
-        <h2 class="ti">أهداف الأكادمية</h2>
+        <h2 class="ti">أهداف الأكاديمية</h2>
         <div class="ch">
             <div class="cha">
                 <div class="icon">
                     <img src="img/Luffy.png" width="130" alt="">
                 </div>
                 <div class="info">
-                    <h3>الهدف المحدد من الأكادمية</h3>
+                    <h3>الهدف المحدد من الأكاديمية</h3>
                     <p>🎯 وظيفة الأكاديمية: <br>
 
                         فهم الأساسيات والمفاهيم الكبرى. <br>
@@ -65,7 +88,7 @@
                     <img src="img/Untiddtled.png" width="130" alt="">
                 </div>
                 <div class="info">
-                    <h3>هدف الطلاب من الأكادمية</h3>
+                    <h3>هدف الطلاب من الأكاديمية</h3>
                     <p>أهم الدوافع المهنية/الأكاديمية: <br>
 
                         الحصول على شهادة معتمدة. <br>
@@ -107,14 +130,14 @@
     </section>
 
     <section class="se1" id="data">
-        <h2 class="ti">لمحة عن الأكادمية</h2>
+        <h2 class="ti">لمحة عن الأكاديمية</h2>
         <div class="ch">
             <div class="cha">
                 <div class="icon">
                     <img src="img/advance.png" width="130" alt="">
                 </div>
                 <div class="info">
-                    <h3>عن الأكادمية</h3>
+                    <h3>عن الأكاديمية</h3>
                     <p>🎓 مدرسة متعددة التخصصات: مستقبل التعليم
                         تتجه المدارس الحديثة لإنشاء بيئات تعليمية تجمع بين التقنية والإبداع والعمل اليدوي لتخريج جيل قادر على الابتكار والتكيف مع المستقبل.
                             الأقسام الرئيسية: البرمجة، الإلكترونيات، الحاسب الآلي، والملابس.</p>

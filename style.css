@@ -34,6 +34,37 @@ header{
 .logo:hover{
     color: #285a51;
 }
+/* ====== تأثير البلور بدون ما يبوظ الشكل ====== */
+
+.blur-word {
+    display: inline;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* لما الماوس يدخل على أي كلمة */
+  .blur-container:hover .blur-word {
+    filter: blur(3px);
+    opacity: 0.4;
+  }
+  
+  /* الكلمة اللي الماوس واقف عليها */
+  .blur-word:hover {
+    filter: blur(0) !important;
+    opacity: 1 !important;
+    transform: none;        /* ❌ ألغينا التكبير */
+    color: inherit;        /* ❌ رجّعنا اللون الطبيعي */
+    text-shadow: none;     /* ❌ مفيش ظل */
+  }
+  
+  /* استثناء الفيسبوك والرقم */
+  .no-blur,
+  .no-blur * {
+    filter: none !important;
+    opacity: 1 !important;
+  }
+  
+
 .ab a{
     text-decoration: none;
     font-size: 23px;
@@ -118,6 +149,18 @@ h5{
     color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+  .s h2 span {
+    font-size: 30px;   /* قسم البرمجة */
+  }
+  
+  .s h3 {
+    font-size: 17px;   /* للتلمذة الثانوية */
+  }
+  
+  .aaa h5 {
+    font-size: 14px;   /* رقم الهاتف */
+  }
+  
 .aaa a img{
     display: inline-block;
     width: 50px;
@@ -235,91 +278,96 @@ h6{
 .icon img{
     border-radius: 10%;
 }
+
+/* ====== إصلاح عرض الموبايل فورًا ====== */
 @media (max-width: 768px){
 
+    body{
+      overflow-x: hidden;
+    }
+  
     header{
-        height: auto;
-        flex-direction: column;
-        padding: 10px;
-        text-align: center;
+      position: relative;
+      height: auto;
     }
-
-    .logo{
-        margin: 10px 0;
-        margin-right: 0; /* هنا اتلغت الـ600px */
-        font-size: 24px;
-    }
-
-    .ab{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 5px;
-    }
-
-    .ab a{
-        font-size: 18px;
-        margin: 5px;
-        padding: 5px 15px;
-    }
-
+  
     section{
-        padding: 20px;
+      padding: 20px !important;
     }
-
+  
     .s{
-        flex-direction: column;
-        text-align: center;
-        background-attachment: scroll;
+      text-align: center;
+      justify-content: center;
+      background-attachment: scroll !important;
     }
-
+  
     .sd{
-        width: 100%;
-        font-size: 10px;
-        margin-top: 250px;
-        margin-left: 0;
-        text-align: center;
+      margin-left: 0 !important;
+      text-align: center;
+      width: 100%;
     }
-
-    .s h2{
-        font-size: 26px;
+  
+    .s h2,
+    .s h3,
+    h5{
+      text-align: center;
     }
-
-    .s h2 span{
-        font-size: 35px;
-    }
-
-    .s h3{
-        font-size: 18px;
-    }
-
-    .cha{
-        width: 90%;
-        height: auto;
-    }
-
-    .foot{
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-        height: auto;
-    }
-}
-
-/* ==== شاشات أقل من 500px ==== */
-@media (max-width: 500px){
-
+  
     .logo{
-        font-size: 20px;
+      margin-right: 0 !important;
     }
+  
+    .cha{
+      width: 95%;
+      height: auto;
+    }
+  
+  }
+  
+/* زرار المنيو */
+.menu-toggle{
+    display: none;
+   
+    font-size: 30px;
+    color: #28443F;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px){
 
+    .menu-toggle{
+      display: block;
+    }
+  
+    .ab{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background-color: #28443F;
+      position: absolute;
+      top: 90px;
+      left: 0;
+      text-align: center;
+      overflow: hidden;
+  
+      /* أنيميشن */
+      max-height: 0;
+      opacity: 0;
+      transition: max-height 0.5s ease, opacity 0.4s ease;
+    }
+  
     .ab a{
-        font-size: 16px;
-        padding: 5px 10px;
+      padding: 12px;
+      margin: 5px 0;
+      font-size: 18px;
     }
-
-    .s h2 span{
-        font-size: 30px;
+  
+    /* لما المنيو تتفتح */
+    .ab.show{
+      max-height: 300px;
+      opacity: 1;
     }
-}
-
+  }
+  
+  

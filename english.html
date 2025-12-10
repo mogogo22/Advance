@@ -3,29 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="MOGOGO" content="موقع خاص بقناة MOHAND WORLD">
+    <meta name="Advance" content="أكاديمية أدفانس تكنولوجي">
     <title>Advance | Programming</title>
     <link rel="icon" href="img/advance.png" type="image/png">
     <link rel="stylesheet" href="styleen.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
         <img class="mone" src="img/advance.png"  alt="تحقق من إتصالك بالأنترنت">
         <a class="logo" href="">Advance</a>
-        <nav class="ab">
-            <a href="videoen.html">Section Members</a>
-            <a href="index.html">عربي</a>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav class="ab" id="mobileMenu">
+          <a href="videoen.html">Section Members</a>
+          <a href="index.html">عربي</a>
         </nav>
-    </header>
-
-    <section class="s" id="index">
-        <div class="sd">
-          <h2>Advance Technology Academy<br><span>Programming Department</span></h2>
-            <h3>For Secondary Apprenticeship</h3>
+      </header>
+      
+      <section class="s" id="index">
+        <div class="sd blur-container">
+    
+            <h2>
+                <span class="blur-word">Advance</span>
+                <span class="blur-word">Technology</span>
+                <span class="blur-word">Academy</span><br>
+    
+                <span class="blur-word main-word">Programming</span>
+                <span class="blur-word main-word">Department</span>
+            </h2>
+    
+            <h3>
+                <span class="blur-word">For Secondary</span>
+                <span class="blur-word">Apprenticeship</span>
+            </h3>
+    
             <div class="aaa">
-                <a href="https://www.facebook.com/AdvanceAcademyar/" target="_blank"><img src="img/face.png" alt=""></a>
-                <h5>+20 155 123 2952</h5>
+                <!-- ❌ مستثنى من البلور -->
+                <a class="no-blur" href="https://www.facebook.com/AdvanceAcademyar/" target="_blank">
+                    <img src="img/face.png" alt="">
+                </a>
+    
+                <!-- ❌ مستثنى من البلور -->
+                <h5 class="no-blur">+20 155 123 2952</h5>
             </div>
+    
         </div>
     </section>
 

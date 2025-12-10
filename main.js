@@ -10,3 +10,6 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+function toggleMenu(){
+  document.getElementById("mobileMenu").classList.toggle("show");
+}

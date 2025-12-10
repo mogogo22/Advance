@@ -5,48 +5,46 @@
     scroll-behavior: smooth;
 }
 body{
-    background: linear-gradient(to top,  #28443F, #61a79a, #f2fd7d);
-    height: 100vh;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #111;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
 header{
     background-color: #f2fd7d;
     position: fixed;
-    z-index: 999;
+    top: 0;
     width: 100%;
+    z-index: 999;
     height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
 }
+.mone{
+    width: 55px;
+    border-radius: 50%;
+}
 .logo{
     text-decoration: none;
     color: #28443F;
     text-transform: uppercase;
-    font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
     margin-right: 600px;
+    font-size: 26px;
+    font-weight: bold;
 }
 .logo:hover{
     color: #285a51;
 }
 .ab a{
     text-decoration: none;
-    font-size: 23px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
+    font-size: 18px;
     font-weight: bold;
-    padding: 3px 20px;
     color: #fff;
-    background-color: unset;
-    margin: 0 10px;
-    border-radius: 5px;
     background-color: #28443F;
-    transition: 0.25s;
+    padding: 6px 16px;
+    border-radius: 6px;
 }
 .ab a:hover{
     background-color: #b4c033;
@@ -64,15 +62,6 @@ section{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-}
-.sd{
-    background-color: #375f58;
-    padding: 10px 15px;
-    border-radius: 10px;
-    border: #fff 3px dashed;
-    text-align: right;
-    margin-left: 70%;
-    transition: 0.25s;
 }
 .sd:hover{
     transition: 0.25s;
@@ -122,7 +111,7 @@ section{
     cursor: context-menu;
 }
 h5{
-    color: #fff;
+    color: rgb(73, 81, 97);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .aaa a img{
@@ -134,7 +123,7 @@ h5{
     transition: 0.50s;
 }
 .s h3{
-    color: rgb(231, 218, 218);
+    color: rgb(68, 81, 87);
     font-size: 20px;
     font-weight: 900;
     margin-bottom: 10px;
@@ -144,68 +133,54 @@ h5{
 .aaa a img:hover{
     transform: scale(1.1);
 }
-
 .se{
     background-color: #28443F;
+    padding: 130px 20px 50px;
 }
 .se1{
     background-color: rgb(129, 0, 119);
+    padding: 130px 20px 50px;
 }
 
 .ti{
-    display: flex;
-    justify-content: center;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 900;
-    font-size: 35px;
     text-align: center;
-    margin-bottom: 100px;
-    margin-top: 50px;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #abd3cc;
 }
 .ch{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
 }
 
 .cha{
-    background-color: #d1d1d1;
-    width: 250px;
-    height: 300px;
-    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
-    border-radius: 5px;
+    background-color: #000000;
+    color: #fff;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+    border-radius: 10px;
     padding: 20px;
-    margin: 15px;
-    transition: 0.25s;
-    color: #28443F;
+    text-align: center;
+    transition: 0.3s;
 }
 .cha:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
-.icon{
-    text-align: center;
+.icon img{
+    width: 120px;
+    margin-bottom: 10px;
 }
 .info h3{
-    color: #000000;
-    font-size: 16px;
-    font-weight: 700;
-    margin: 10px;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    margin: 10px 0;
 }
 .info p{
-    font-size: 13px;
-    font-weight: 500;
-    text-align: right;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgb(157, 206, 236);
 }
-.mone{
-    border-radius: 100px;
-    width: 65px;
-}
+
 .sd{
     opacity: 0;
     transform: translateX(-20px);
@@ -234,19 +209,19 @@ h5{
     transform: scale(1);
 }
 .foot{
-height: 70px;
-color: #fff;
-padding: 25px;
-justify-content: space-between;
-display: flex;
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .links a{
     text-decoration: none;
-    font-size: 16px;
     color: rgb(0, 175, 219);
-    margin: 8px;
-    font-weight: 400;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 .ssss{
     color: #f2fd7d;
@@ -356,4 +331,32 @@ h6{
         font-size: 30px;
     }
 }
+@media (max-width: 768px){
 
+    header{
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .logo{
+        font-size: 22px;
+    }
+
+    .se,
+    .se1{
+        padding-top: 160px;
+    }
+
+    .ti{
+        font-size: 26px;
+    }
+
+    .foot{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+}
