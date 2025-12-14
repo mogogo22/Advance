@@ -39,17 +39,25 @@ header{
 }
 .ab a{
     text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight:900;
+    padding:9px 18px;
     color: #fff;
-    background-color: #28443F;
-    padding: 6px 16px;
-    border-radius: 6px;
+    background-color: unset;
+    margin: 0 10px;
+    border-radius:14px;
+    background:linear-gradient(135deg,#6d0f5d,#03022e);
+    transition:.3s;
+    box-shadow:0 10px 30px rgba(255,0,106,.45);
 }
 .ab a:hover{
-    background-color: #b4c033;
+    background:linear-gradient(135deg,#bd1aa2,#100e97);
     color: #000;
     transition: 0.25s;
+    transform:translateY(-3px);
+    box-shadow:0 18px 40px #ffffff;
 }
 section{
     padding: 100px 50px;
@@ -153,15 +161,17 @@ h5{
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 20px;
 }
-
+.se1 .ch .cha{
+    background:#fff;border-radius:12px;padding:18px;text-align:center;
+    box-shadow:0 12px 30px rgba(10,40,80,0.06);
+    transition:transform .28s ease, box-shadow .28s ease;
+    background:linear-gradient(180deg,#ff0095, #465554)
+}
 .cha{
-    background-color: #000000;
-    color: #fff;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    transition: 0.3s;
+    background:#fff;border-radius:12px;padding:18px;text-align:center;
+    box-shadow:0 12px 30px rgba(10,40,80,0.06);
+    transition:transform .28s ease, box-shadow .28s ease;
+    background:linear-gradient(180deg,#113b5e, #465554)
 }
 .cha:hover{
     transform: scale(1.05);
